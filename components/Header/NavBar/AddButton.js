@@ -13,6 +13,6 @@ const AddButton = () => {
       Vendre
     </Button>
   );
-}
+};
 
-export default AddButton
+export default AddButton;

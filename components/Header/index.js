@@ -1,12 +1,12 @@
-import Home from '../Home';
-import NavBar from './NavBar/';
+import Home from "../Home";
+import NavBar from "./NavBar/";
 
 const Header = () => {
-  return(
+  return (
     <>
-    <NavBar />
+      <NavBar />
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
