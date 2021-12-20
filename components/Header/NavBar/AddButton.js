@@ -8,6 +8,7 @@ const AddButton = () => {
       colorScheme="teal"
       variant="solid"
       w={["100%", "100%", "50%", "50%"]}
+      boxShadow="xl"
     >
       Vendre
     </Button>
