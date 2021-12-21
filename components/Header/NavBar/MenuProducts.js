@@ -13,7 +13,7 @@ const MenuProducts = () => {
     <Menu>
       <MenuButton>Produits
       </MenuButton>
-      <MenuList>
+      <MenuList zIndex="3">
         <MenuGroup>
           <MenuItem>Poignées</MenuItem>
           <MenuItem>Branches</MenuItem>

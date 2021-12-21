@@ -5,7 +5,7 @@ import {
   Tag,
   IconButton,
   Heading,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 const CardProduct = () => {
@@ -13,7 +13,6 @@ const CardProduct = () => {
     <Card
       mx="2"
       my="2"
-      height="350px"
       width="250px"
       backgroundColor="rgba(255, 255, 255, 0.2)"
       borderRadius="md"
@@ -28,15 +27,23 @@ const CardProduct = () => {
         borderTopRightRadius="md"
       />
       <Card p="2">
-        {/* Marque */}
-        <Tag colorScheme="green" size="sm">
-          <Text casing="upperCase">Arc System</Text>
-        </Tag>
-        {/* Nom du produit */}
-        <Heading size="md" color="white" fontWeight="600" ml="1">
+        <Heading size="md" color="white" fontWeight="600" ml="1" mb="1">
           Viseur SX200
         </Heading>
-        <Box display="flex" justifyContent="space-between" alignItems="center" mt="2">
+        {/* Marque */}
+        <Tag colorScheme="green" size="sm" mr="1">
+          <Text casing="upperCase">Arc System</Text>
+        </Tag>
+        <Tag colorScheme="red" size="sm">
+          <Text casing="upperCase">Arc Classique</Text>
+        </Tag>
+        {/* Nom du produit */}
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          mt="2"
+        >
           <p>45.99€</p>
           <IconButton
             aria-label="go to product page"

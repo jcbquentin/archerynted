@@ -11,7 +11,7 @@ const MenuCategories = () => {
   return (
     <Menu>
       <MenuButton>Catégories</MenuButton>
-      <MenuList>
+      <MenuList zIndex="3">
         <MenuGroup>
           <MenuItem>Arc Classique</MenuItem>
           <MenuItem>Arc à Poulie</MenuItem>
