@@ -1,17 +1,13 @@
 import { Box, Heading } from "@chakra-ui/react";
+import Title from "../../common/title"
 
-import CardProduct from "./CardProduct";
+import CardProduct from "../../common/CardProduct";
 
 const LatestProduct = () => {
   return (
     // Container for last added products card
     <div>
-      <Box display="flex" justifyContent="center" my="4" pt="8">
-        <Heading as="h2" size="xl">
-          Derniers Produits Ajoutés
-        </Heading>
-      </Box>
-
+      <Title title={"Derniers Produits ajoutés"} />
       <Box
         py="8"
         px="2"
@@ -22,6 +18,8 @@ const LatestProduct = () => {
         alignItems="center"
         flexWrap="wrap"
       >
+
+      {/* // TODO faire un map sur les cards */}
         <CardProduct />
         <CardProduct />
         <CardProduct />

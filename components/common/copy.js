@@ -8,17 +8,19 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { ArrowRightIcon } from "@chakra-ui/icons";
-const CardProduct = () => {
+
+const CardProduct = ({ image, article, brand, categories, price}) => {
   return (
     <Card
       mx="2"
       my="2"
-      width="250px"
+      width="300px"
+      h="450px"
       backgroundColor="rgba(255, 255, 255, 0.2)"
       borderRadius="md"
     >
       <Image
-        src="https://archerie-wuilbaut.eu/3695-superlarge_default/viseur-sx200-cl-de-arc-systeme.jpg"
+        src={image}
         alt="product"
         h={["70%", "70%", "70%", "70%"]}
         w="100%"
@@ -27,24 +29,24 @@ const CardProduct = () => {
         borderTopRightRadius="md"
       />
       <Card p="2">
-        <Heading size="md" color="white" fontWeight="600" ml="1" mb="1">
-          Viseur SX200
+        {/* Nom du produit */}
+        <Heading size="md" color="white" fontWeight="600" ml="1" mb="4">
+          {article}
         </Heading>
         {/* Marque */}
         <Tag colorScheme="green" size="sm" mr="1">
-          <Text casing="upperCase">Arc System</Text>
+          <Text casing="upperCase">{brand}</Text>
         </Tag>
         <Tag colorScheme="red" size="sm">
-          <Text casing="upperCase">Arc Classique</Text>
+          <Text casing="upperCase">{categories}</Text>
         </Tag>
-        {/* Nom du produit */}
         <Box
           display="flex"
           justifyContent="space-between"
           alignItems="center"
-          mt="2"
+          mt="4"
         >
-          <p>45.99€</p>
+          <Text ml="2">{price}€</Text>
           <IconButton
             aria-label="go to product page"
             size="sm"
