@@ -5,6 +5,7 @@ import {
   Tag,
   IconButton,
   Heading,
+  Text
 } from "@chakra-ui/react";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 const CardProduct = () => {
@@ -29,10 +30,10 @@ const CardProduct = () => {
       <Card p="2">
         {/* Marque */}
         <Tag colorScheme="green" size="sm">
-          Arc System
+          <Text casing="upperCase">Arc System</Text>
         </Tag>
         {/* Nom du produit */}
-        <Heading size="md" color="white" fontWeight="600">
+        <Heading size="md" color="white" fontWeight="600" ml="1">
           Viseur SX200
         </Heading>
         <Box display="flex" justifyContent="space-between" alignItems="center" mt="2">

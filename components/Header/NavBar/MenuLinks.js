@@ -1,7 +1,8 @@
 import { Box, Stack } from "@chakra-ui/react";
-import MenuItem from "./MenuItem";
 import NavSearch from './NavSearch';
 import AddButton from './AddButton'
+import MenuDropdown from "./MenuCategories";
+import MenuProducts from "./MenuProducts";
 
 
 
@@ -21,9 +22,8 @@ const MenuLinks = ({isOpen}) => {
         pt={[4, 4, 0, 0]}
         pb={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">Accueil</MenuItem>
-        <MenuItem to="/how">Catégories</MenuItem>
-        <MenuItem to="/how">Produits</MenuItem>
+        <MenuDropdown />
+        <MenuProducts />
         <NavSearch />
         <AddButton />
       </Stack>
