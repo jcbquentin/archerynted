@@ -8,9 +8,18 @@ import {
 } from "@chakra-ui/react";
 
 const RadioCategorie = ({ setCategories }) => {
+
+  const categoriesRadio = document.getElementsByName("categories");
+  // Récupère la valeur d'un input de type radio.
+  for (let i = 0; i < categoriesRadio.length; i++) {
+    if(categoriesRadio[i].checked) {
+      setCategories(categoriesRadio[i].value)
+    }
+  }
+
   return (
     <FormControl as="fieldset" mb="8" isRequired>
-      <FormLabel as="legend">Catégories</FormLabel>
+      <FormLabel as="legend">Types d'arcs</FormLabel>
       <RadioGroup>
         <HStack
           spacing="24px"
@@ -19,34 +28,30 @@ const RadioCategorie = ({ setCategories }) => {
           align="flex-start"
         >
           {/* // TODO à revoir */}
-          <Radio ml={["6", "6", "0"]} value="arc-classique" name="categories" onChange={(event) => setCategories(event.target.value)}>
+          <Radio ml={["6", "6", "0"]} value="arc-classique" name="categories">
             Arc Classique
           </Radio>
           <Radio
             value="arc-poulie"
             name="categories"
-            onChange={(event) => setCategories(event.target.value)}
           >
             Arc à poulie
           </Radio>
           <Radio
             value="arc-chasse"
             name="categories"
-            onChange={(event) => setCategories(event.target.value)}
           >
             Arc Chasse
           </Radio>
           <Radio
             value="barebow"
             name="categories"
-            onChange={(event) => setCategories(event.target.value)}
           >
             BareBow
           </Radio>
           <Radio
             value="longbow"
             name="categories"
-            onChange={(event) => setCategories(event.target.value)}
           >
             Longbow
           </Radio>

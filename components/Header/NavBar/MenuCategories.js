@@ -10,7 +10,7 @@ const MenuCategories = () => {
   // TODO rajouter les liens
   return (
     <Menu>
-      <MenuButton>Catégories</MenuButton>
+      <MenuButton whiteSpace="yes" display="inline">Type d'arc</MenuButton>
       <MenuList zIndex="3">
         <MenuGroup>
           <MenuItem>Arc Classique</MenuItem>

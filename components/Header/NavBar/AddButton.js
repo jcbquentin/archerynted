@@ -7,7 +7,8 @@ const AddButton = () => {
     // Bouton rédirigeant vers le formulaire d'ajout d'un produit à vendre
     <Link href="/deposer-une-annonce">
       <Button
-        colorScheme="teal"
+        color="blue.500"
+        bg="blue.100"
         variant="solid"
         w={["100%", "100%", "50%", "50%"]}
         boxShadow="xl"

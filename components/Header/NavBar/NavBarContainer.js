@@ -12,7 +12,7 @@ const NavBarContainer = ({ isOpen, children, ...props }) => {
       p={8}
       bg={{ base: isOpen ? 'rgba(46, 52, 76, 1)' : 'transparent'}}
       color={["white", "white", "primary.700", "primary.700"]}
-      
+      boxShadow="md"
       {...props}
     >
       {children}
