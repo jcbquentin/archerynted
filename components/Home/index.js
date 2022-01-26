@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/react";
-import AddButton from "../Header/NavBar/AddButton";
 import HeroBanner from "./HeroBanner";
 import HeroBox from "./HeroBox";
 

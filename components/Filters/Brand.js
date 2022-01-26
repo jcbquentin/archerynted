@@ -12,10 +12,10 @@ const Brand = () => {
 
   return (
     <Menu closeOnSelect={false}>
-      <MenuButton as={Button} colorScheme="blue">
+      <MenuButton as={Button} colorScheme="blue" w="fit-content" m="0 auto" alignSelf="center"> 
         Marques <ChevronDownIcon />
       </MenuButton>
-      <MenuList>
+      <MenuList zIndex="3" w={["100vw", "100vw", "fit-content"]}>
         <MenuOptionGroup title="Marques" type="checkbox">
             <MenuItemOption name="check" id="check" value="Hoyt">Hoyt</MenuItemOption>
             <MenuItemOption name="check" value="Uukha">Uukha</MenuItemOption>

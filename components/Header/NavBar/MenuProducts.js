@@ -6,14 +6,16 @@ import {
   MenuGroup,
   MenuDivider,
 } from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
+
 
 const MenuProducts = () => {
   // TODO rajouter les liens
   return (
     <Menu>
-      <MenuButton>Produits
+      <MenuButton whiteSpace="nowrap">Produits&nbsp;<ChevronDownIcon />
       </MenuButton>
-      <MenuList zIndex="3">
+      <MenuList zIndex="3" w={["100vw", "100vw", "auto"]}>
         <MenuGroup>
           <MenuItem>Poignées</MenuItem>
           <MenuItem>Branches</MenuItem>

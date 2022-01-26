@@ -1,5 +1,6 @@
-import { Box, Heading } from "@chakra-ui/react";
-import Title from "../../common/title"
+import { Box } from "@chakra-ui/react";
+import Title from "../../common/title";
+import ProductBox from "../../common/ProductBox";
 
 import CardProduct from "../../common/CardProduct";
 
@@ -8,25 +9,15 @@ const LatestProduct = () => {
     // Container for last added products card
     <div>
       <Title title={"Derniers Produits ajoutés"} />
-      <Box
-        py="8"
-        px="2"
-        mt="2"
-        display="flex"
-        flexDirection={["column", "column", "row", "row"]}
-        justifyContent="center"
-        alignItems="center"
-        flexWrap="wrap"
-      >
-
-      {/* // TODO faire un map sur les cards */}
+      <ProductBox>
+        {/* // TODO faire un map sur les cards */}
         <CardProduct />
         <CardProduct />
         <CardProduct />
         <CardProduct />
         <CardProduct />
         <CardProduct />
-      </Box>
+      </ProductBox>
     </div>
   );
 };

@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 
+import Tags from "../common/Tags"
+
 const CardProduct = ({ image, article, brand, categories, price}) => {
   return (
     <Card
@@ -33,13 +35,20 @@ const CardProduct = ({ image, article, brand, categories, price}) => {
         <Heading size="md" color="white" fontWeight="600" ml="1" mb="4">
           {article}
         </Heading>
+        {/* // TODO a dynamiser */}
+        {/* Tags */}
         {/* Marque */}
-        <Tag colorScheme="green" size="sm" mr="1">
-          <Text casing="upperCase">{brand}</Text>
-        </Tag>
-        <Tag colorScheme="red" size="sm">
-          <Text casing="upperCase">{categories}</Text>
-        </Tag>
+        <Tags colorScheme={"red"} size={"sm"} tagName="Arc System" mr="1" />
+        {/* Type d'arc */}
+        <Tags colorScheme={"blue"} size={"sm"} tagName="Arc Classqiue" mr="1" />
+        {/* Type de produit */}
+        <Tags
+          colorScheme={"green"}
+          size={"sm"}
+          tagName="Accessoire Viseur"
+          mr="1"
+        />
+
         <Box
           display="flex"
           justifyContent="space-between"

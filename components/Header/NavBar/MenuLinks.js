@@ -1,7 +1,8 @@
-import { Box, Stack } from "@chakra-ui/react";
+import { Box, Stack, Fade } from "@chakra-ui/react";
 import NavSearch from './NavSearch';
-import AddButton from './AddButton'
 import MenuProducts from "./MenuProducts";
+
+import Buttons from "../../common/Buttons"
 
 
 
@@ -14,16 +15,16 @@ const MenuLinks = ({isOpen}) => {
       borderBottom={["1px solid white", "1px solid white", "none", "none"]}
     >
       <Stack
-        spacing={8}
+        spacing="10"
         align="center"
         justify={["center", "space-between", "center", "center"]}
         direction={["column", "column", "row", "row"]}
-        pt={[4, 4, 0, 0]}
-        pb={[4, 4, 0, 0]}
+        py={[4, 4, 0, 0]}
       >
         <MenuProducts />
         <NavSearch />
-        <AddButton />
+        <Buttons link={"deposer-une-annonce"} linkAlt={"Déposer une annonce"} buttonText={"Vendre"} color={"blue.600"} colorScheme={"blue"} />
+        <Buttons link={"deposer-une-annonce"} linkAlt={"Déposer une annonce"} buttonText={"Connexion "} color={"green.600"} colorScheme={"green"} />
       </Stack>
     </Box>
   );

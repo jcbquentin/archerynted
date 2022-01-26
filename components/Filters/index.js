@@ -1,6 +1,7 @@
 import {
   Box,
   HStack,
+  Stack,
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import Brand from "./Brand";
@@ -14,21 +15,22 @@ const Filters = ({ maxPrice }) => {
         bg="blue.200"
         w="fit-content"
         p="2"
+        mx="4"
+        m="0 auto"
         color="white"
         display="flex"
-        m="0 auto"
-        flexDirection="row"
+        justifyContent="center"
         flexWrap="nowrap"
         borderRadius="lg"
         alignItems="center"
       >
-        <HStack>
+        <Stack direction={["column", "column", "row", "row"]}>
           {/* Type d'arc */}
           <BowType />
           {/* Marque d'arc */}
           <Brand />
           <PriceSlider />
-        </HStack>
+        </Stack>
       </Box>
     </>
   );

@@ -1,5 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
-import AddButton from "../Header/NavBar/AddButton";
+
+import Buttons from '../common/Buttons'
 
 const HeroBox = () => {
   return (
@@ -24,7 +25,7 @@ const HeroBox = () => {
       <Text mb="6" fontWeight="600" fontSize="20">
         Vous souhaitez vendre <br /> facilement votre <br /> équipement ?
       </Text>
-      <AddButton />
+      <Buttons link={"deposer-une-annonce"} linkAlt={"deposer une annonce"} color={"blue.600"} colorScheme={"blue"} buttonText={"Vendre"} />
     </Box>
   );
 };

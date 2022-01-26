@@ -11,10 +11,10 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 const BowType = () => {
   return (
     <Menu closeOnSelect={false}>
-      <MenuButton as={Button} colorScheme="blue">
+      <MenuButton as={Button} colorScheme="blue" w="fit-content" m="0 auto" alignSelf="center">
         Types d&apos;arcs <ChevronDownIcon />
       </MenuButton>
-      <MenuList>
+      <MenuList zIndex="3" w={["100vw", "100vw", "fit-content"]}>
         <MenuOptionGroup title="Arc" type="checkbox">
           <MenuItemOption value="Arc Classique">Arc Classqiue</MenuItemOption>
           <MenuItemOption value="Arc à Poulie">Arc à Poulie</MenuItemOption>

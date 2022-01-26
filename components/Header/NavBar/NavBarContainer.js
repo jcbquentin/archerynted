@@ -7,10 +7,10 @@ const NavBarContainer = ({ isOpen, children, ...props }) => {
       as="nav"
       align="center"
       justify="space-between"
-      wrap="wrap"
+      wrap={["wrap", "wrap", "nowrap", "nowrap"]}
       w="100%"
       p={8}
-      bg={{ base: isOpen ? 'rgba(46, 52, 76, 1)' : 'transparent'}}
+      bg={{ base: isOpen ? 'blue.900' : 'transparent'}}
       color={["white", "white", "primary.700", "primary.700"]}
       boxShadow="md"
       {...props}

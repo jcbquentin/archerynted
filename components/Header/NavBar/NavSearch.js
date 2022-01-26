@@ -11,7 +11,7 @@ const NavSearch = () => {
   // Formulaire de recherche à travers les produits disponible.
   return (
     <InputGroup>
-      <Input placeholder="Viseur..." w={"100%"} />
+      <Input placeholder="Viseur..." w="xs" />
       <InputRightElement>
         <IconButton aria-label="Search database" icon={<SearchIcon />} />
       </InputRightElement>
